@@ -1,6 +1,0 @@
-print("Veja seu primeiro e último nome")
-n = str(input('Digite seu nome completo: ')).strip().upper()
-nome = n.split()
-print(f'Seu primeiro nome é {nome[0]}')
-x2 = (nome[len(nome)-1])
-print(f'Seu último nome é {x2}')  

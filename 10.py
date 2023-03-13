@@ -1,6 +1,0 @@
-print('Calcule o aumento e a redução de 15%')
-s = float(input('Quanto ganha um funcionário em R$?'))
-aum = s + (s * 15 / 100)
-din = s - (s * 15 / 100)
-print(f'O novo salário do funcinário com 15% de aumento é {aum}R$')
-print(f'O novo salário do funcionário com 15% de redução é {din}R$')
