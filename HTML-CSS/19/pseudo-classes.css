@@ -1,0 +1,25 @@
+body{
+    font: normal 600 1em Arial;
+    background-image: linear-gradient(to left, rgb(152, 255, 152), white);
+    text-align: center;
+}
+div{
+    background-color: white;
+    width: 300px;
+    text-align: center;
+    box-shadow: 3px 3px 3px black;
+    margin: auto;
+}
+div > p{
+    display: none;
+}
+div:hover > p{
+    display: block;
+    background-color: white;
+}
+div:hover{
+    background-color: rgb(255, 172, 136);
+}
+p::after{
+    content: " Olá";
+}

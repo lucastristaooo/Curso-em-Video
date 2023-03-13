@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem dinâmicas em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmicas em HTML</h1>
+    <p>Caso o tamanho da tela seja menor, ou diminua, a imagem mudará
+        
+    </p>
+    <picture>
+        <source media="(max-width: 500px)" srcset="p.jpg" type="image/jpg">r
+        <source media="(max-width: 1000px)" srcset="m.jpg" type="image/jpg">
+        <img src="g.jpg" alt="Foto do cachorro">
+    </picture>    
+</body>
+</html>

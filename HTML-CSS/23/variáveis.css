@@ -1,0 +1,22 @@
+body{
+    background-image: -moz-linear-gradient(to left, white);
+}
+:root{
+    --azul: blue;
+    --verde: green;
+    --vermelho: red;
+    --preto: black;
+
+    --arial: Arial
+}
+h1{
+    color: var(--azul);
+    font-family: var(--arial);
+}
+h2{
+    color: var(--vermelho);
+}
+p{
+    color: var(--preto);
+    font-family: var(--arial);
+}

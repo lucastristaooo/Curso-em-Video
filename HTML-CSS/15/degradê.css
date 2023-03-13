@@ -1,0 +1,7 @@
+*{/*Configuração global da CSS*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-image: linear-gradient(to top, white, rgb(0, 110, 255) );
+    background-attachment: fixed;
+}

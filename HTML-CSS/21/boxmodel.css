@@ -1,0 +1,25 @@
+h1{
+    background-color: azure;
+    height: 300px;
+    width: 500px;
+    text-align: center;
+
+    font: normal 600 2em Arial;
+
+    border: 3px solid black;
+
+    padding: 10px;
+
+    margin: 20px auto 20px auto;
+
+    box-shadow: 3px 3px 10px black;
+}
+
+a{
+    background-color: beige;
+    border: 1px solid black;
+
+    padding: 10px;
+
+    margin: 10px auto 10px auto
+}

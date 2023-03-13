@@ -1,0 +1,14 @@
+@font-face {
+    font-family: ShantellSans;
+    src: url(ShantellSans-VariableFont_BNCE\,INFM\,SPAC\,wght.ttf) format(opentype);
+}
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+body{
+    background-image: linear-gradient(to left, blue, white);
+}
+.web{
+    font: normal 100 1em 'Climate Crisis', cursive;
+}
+.dowload{
+    font: normal 100 1em ShantellSans;
+}

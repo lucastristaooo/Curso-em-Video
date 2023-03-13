@@ -1,0 +1,35 @@
+body{
+    background-image: linear-gradient(to left, #F991CC, #E2AFDE);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+main{
+    background-color: #F7FFF7;
+    font: normal 700 1em Arial;
+    width: 500px;
+    margin: auto;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px black;
+    text-align: justify;
+}
+main > p{
+    display: none;
+}
+main:hover > p{
+    display: block;
+}
+.link{
+    text-decoration: none;
+}
+.link:hover{
+    color: rgb(0, 30, 255);
+    text-decoration: underline;
+}
+.link:active{
+    background-color: pink;
+}
+.link::after{
+    content: " :)";
+}
