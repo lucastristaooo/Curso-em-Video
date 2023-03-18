@@ -18,3 +18,6 @@ td{
 .amarelo{
     background-color: yellow;
 }
+.diferente > td{
+    text-align: right;
+}
