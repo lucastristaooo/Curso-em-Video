@@ -1,0 +1,44 @@
+body{
+    font: normal 500 1em Arial;
+    background-image: -moz-linear-gradient(to right, yellow, orange);
+}
+main{
+    background-color: white;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px black;
+    text-align: center;
+}
+h1{
+    text-shadow: 3px 3px 10px black;
+}
+table{
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border: 3px solid black;
+    width: 500px;
+    border-collapse: collapse;
+}
+tbody, tfoot{
+    text-align: center;
+}
+thead{
+    background-color: grey;
+    color: white;
+}
+th{
+    border: solid 2px black;
+
+}
+td{
+    border: 2px solid black;
+}
