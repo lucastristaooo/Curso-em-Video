@@ -1,0 +1,21 @@
+table{
+    border-collapse: collapse;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+}
+caption{
+    font: normal bolder 2em Arial;
+}
+th{
+    background-color: grey;
+    color: white;
+    font-weight: 600;
+}
+td, th{
+    border: 1px solid black;
+}
+.a{
+    background-color: white;
+    color: black;
+}
