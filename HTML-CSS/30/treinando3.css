@@ -13,3 +13,12 @@ th{
 th, td{
     border: 1px solid black;
 }
+.a{
+    background-color: yellow;
+}
+.b{
+    background-color: blue;
+}
+.c{
+    background-color: red;
+}
