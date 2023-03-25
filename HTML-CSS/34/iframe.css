@@ -1,0 +1,11 @@
+body{
+    background-color: lightblue;
+    font: normal 400 1em Arial;
+}
+iframe{
+    display: block;
+    margin: auto;
+    width: 90vw;
+    height: 50vh;
+    box-shadow: 3px 3px 10px black;
+}
