@@ -36,7 +36,7 @@ header{
 }
 header > p{
     font-weight: 600;
-    padding: 10px;
+    padding-bottom: 10px;
 }
 header > h1{
     color: white;
