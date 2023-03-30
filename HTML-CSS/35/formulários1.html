@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<style>
+    h1, form{
+        text-align: center;
+    }
+    input{
+        margin-bottom: 10px;
+    }
+</style>
+<body>
+    <main>
+        <h1>Formulário</h1>
+        <form action="exemplo.php" method="post" autocomplete="on">
+            <div>
+                <label for="usuario">Usúario: </label>
+                <input type="text" name="" id="usuario" required minlength="2" maxlength="15" size="10" placeholder="2-15 Digitos"  autocomplete="username">
+            </div>
+            <div>
+                <label for="senha">Senha: </label>
+                <input type="password" name="" id="senha" required minlength="8" maxlength="8" size="10" placeholder="8 Digitos" autocomplete="current-password">
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Apagar">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
