@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
 </head>
+<style>
+    table{
+        border-collapse: collapse;
+        width: 200px;
+        text-align: center;
+    }
+    th, td{
+        border: 1px solid black;
+    }
+</style>
 <body>
     <h1>Formulário</h1>
         <form action="">
@@ -13,14 +23,39 @@
                 <input type="text" name="nome" id="nome"></p>
             <p><label for="idade">Idade</label>
                 <input type="number" name="nome" id="idade"></p>
-            <p><input type="submit" value="Adicionar" onclick="adicionar()"></p>
+            <p><input type="button" value="Adicionar" onclick="adicionar()"></p>
         </form>
+    <div id="resposta">
+
+    </div>
+    <table id="tabela">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="nomet">
+
+                </td>
+                <td id="idadet">
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 <script>
     function adicionar(){
         var nome = document.getElementById("nome")
         var idade = document.getElementById("idade")
-        alert(`Seu nome ${nome.value} e você tem ${Number(idade.value)} anos`)
+        var resposta = document.getElementById("resposta")
+        var nomet = document.getElementById("nomet")
+        var idadet = document.getElementById("idadet")
+        nomet.innerHTML = nome.value
+        idadet.innerHTML = idade.value
     }
 </script>
 </html>
