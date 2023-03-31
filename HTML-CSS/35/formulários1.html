@@ -15,22 +15,20 @@
     }
 </style>
 <body>
-    <main>
-        <h1>Formulário</h1>
-        <form action="exemplo.php" method="post" autocomplete="on">
-            <div>
-                <label for="usuario">Usúario: </label>
-                <input type="text" name="" id="usuario" required minlength="2" maxlength="15" size="10" placeholder="2-15 Digitos"  autocomplete="username">
-            </div>
-            <div>
-                <label for="senha">Senha: </label>
-                <input type="password" name="" id="senha" required minlength="8" maxlength="8" size="10" placeholder="8 Digitos" autocomplete="current-password">
-            </div>
-            <div>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Apagar">
-            </div>
-        </form>
-    </main>
+    <h1>Formulário</h1>
+    <form action="" method="post" autocomplete="on">
+        <div>
+            <label for="usuario">Usúario</label>
+            <input type="text" name="usuario" id="usuario" required minlength="2" maxlength="15" size="15" placeholder="Digite a o usúario" autocomplete="username">
+        </div>
+        <div>
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" required minlength="8" maxlength="8" size="15" placeholder="Digite a senha" autocomplete="current-password">
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+        </div>
+    </form>
 </body>
 </html>
