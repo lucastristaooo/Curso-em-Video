@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action=" " method="get" autocomplete="on">
+        <div>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" required minlength="2" maxlength="15" size="15" placeholder="Nome completo" autocomplete="username">
+        </div>
+        <div>
+            <label for="nota">Nota: </label>
+            <input type="number" name="nota" id="nota" required min="1" max="10" size="15" placeholder="0-10" step="0.5">
+        </div>
+        <div>
+            <label for="data">Data: </label>
+            <input type="date" name="data" id="data">
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+        </div>
+    </form>
+</body>
+</html>
