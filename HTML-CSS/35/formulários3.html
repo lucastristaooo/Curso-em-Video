@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<style>
+    fieldset, h1{
+        margin: auto;
+        width: 200px;
+        text-align: center;
+    }
+    input{
+        margin-bottom: 10px;
+    }
+</style>
+<body>
+    <h1>Formulário</h1>
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <form action="" method="get" autocomplete="on">
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required minlength="2" maxlength="15" size="15" placeholder="Digite aqui" autocomplete="username">
+            </div>
+            <div>
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" required minlength="8" size="15" placeholder="Digite aqui" autocomplete="current-password">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required minlength="10" size="15"placeholder="Digite aqui" autocomplete="email">
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Apagar">
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>
