@@ -1,80 +1,81 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Treinando Formulário</title>
+    <title>Formulários</title>
+    <link rel="stylesheet" href="treinando.css">
 </head>
-<style>
-    body{
-        font: normal 500 1em Arial;
-        background-color: aqua;
-    }
-    h1{
-        text-align: center;
-    }
-    fieldset{
-        width: 500px;
-        border: 1px solid black;
-        background-color: lightskyblue;
-        margin: auto;
-        border-radius: 5px;
-        box-shadow: 1px 1px 3px black;
-    }
-</style>
 <body>
-    <h1>Cadastro</h1>
+    <h1>Formulário</h1>
     <fieldset>
-        <legend>Usúario</legend>
+        <legend>Login</legend>
         <form action="" method="post" autocomplete="on">
             <p>
-                <label for="nome">Usúario: </label>
-                    <input type="text" name="nome" id="nome" required minlength="2" maxlength="10" size="15" placeholder="Digite aqui" autocomplete="username">
+                <label for="nome">Nome: </label>
+                    <input type="text" name="nome" id="nome" required minlength="2" maxlength="15" size="15" placeholder="Digite aqui" autocomplete="username">
             </p>
             <p>
                 <label for="senha">Senha: </label>
-                    <input type="password" name="senha" id="senha" required minlength="8" maxlength="8" size="15" placeholder="Digite aqui" autocomplete="current-password">
+                    <input type="password" name="senha" id="senha" required minlength="8" size="15" placeholder="Digite aqui" autocomplete="current-password">
             </p>
             <p>
                 <label for="nota">Nota: </label>
-                    <input type="number" name="nota" id="nota" required min="0" max="10" size="15" placeholder="Digite aqui" step="0.5">
+                    <input type="number" name="nota" id="nota" required min="0" max="10" size="15" step="0.5" value="0.0">
             </p>
             <p>
                 <input type="submit" value="Enviar">
-            </p>
-            <p>
                 <input type="reset" value="Apagar">
             </p>
         </form>
     </fieldset>
     <fieldset>
-        <legend>Informações pessoais</legend>
+        <legend>Dados Pessoais</legend>
         <form action="" method="get" autocomplete="on">
             <p>
                 <label for="email">Email: </label>
-                    <input type="email" name="email" id="email" minlength="10" maxlength="20" size="15" placeholder="Digite aqui" autocomplete="email">
+                    <input type="email" name="email" id="email" required minlength="5" max="20" size="15" placeholder="Digite aqui" autocomplete="email">
             </p>
             <p>
                 <label for="tel">Telefone: </label>
-                    <input type="tel" name="tel" id="tel" value="+55 (16)" required min="9" max="9" size="15" placeholder="Digite aqui" autocomplete="tel">
+                    <input type="tel" name="telefone" id="telefone" required min="9" max="9" placeholder="Digite aqui" autocomplete="tel">
             </p>
             <p>
-                <legend>Nacionalidade</legend>
-                <input type="checkbox" name="" id="brasil" checked><label for="brasil">Brasileiro</label>
-                <input type="checkbox" name="" id="eua"><label for="eua">Norte-Americano</label>
-                <input type="checkbox" name="" id="frances"><label for="frances">Francês</label>
-                <input type="checkbox" name="" id="alemao"><label for="alemao">Alemão</label>
+                <legend>Nacionalidades</legend>
+                <input type="checkbox" name="" id="brasileiro" checked><label for="brasileiro">Brasileiro</label><br>
+                <input type="checkbox" name="" id="americano"><label for="americano">Americano</label><br>
+                <input type="checkbox" name="" id="frances"><label for="frances">Francês</label><br>
+                <input type="checkbox" name="" id="argentino"><label for="argentino">Argentino</label>
             </p>
             <p>
                 <legend>Sexo</legend>
-                <input type="radio" name="sexo" id="home"><label for="home">Homem</label>
-                <input type="radio" name="sexo" id="muie"><label for="muie">Mulher</label>
+                <input type="radio" name="sexo" id="h"><label for="h">Homem</label>
+                <input type="radio" name="sexo" id="m"><label for="m">Mulher</label>
             </p>
             <p>
                 <input type="submit" value="Enviar">
+                <input type="reset" value="Apagar">
+            </p>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Personalização</legend>
+        <form action="" method="post" autocomplete="on">
+            <p>
+                <label for="cor">Cor: </label>
+                    <input type="color" name="" id="cor">
             </p>
             <p>
+                <label for="imagem">Imagem: </label>
+                    <input type="file" name="" id="imagem">
+            </p>
+            <p>
+                <label for="range">Range: </label>
+                    <input type="range" name="" id="range" min="1" max="10">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
                 <input type="reset" value="Apagar">
             </p>
         </form>

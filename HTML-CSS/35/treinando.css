@@ -1,0 +1,12 @@
+body{
+    background-color: lightskyblue;
+    font: normal 500 1em Arial;
+}
+fieldset{
+    width: 500px;
+    margin: auto;
+    border: 1px solid black;
+}
+h1{
+    text-align: center;
+}
