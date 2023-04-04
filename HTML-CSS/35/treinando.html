@@ -80,5 +80,28 @@
             </p>
         </form>
     </fieldset>
+    <fieldset>
+        <legend>Escolhas</legend>
+        <form action="" method="get" autocomplete="on">
+            <select name="" id="">
+                <optgroup label="Letras do alfabeto">
+                    <option value="">Escolher</option>
+                    <option value="a">A</option>
+                    <option value="b">B</option>
+                    <option value="c">C</option>
+                    <option value="d">D</option>
+                    <option value="e">E</option>
+                </optgroup>
+            </select><br><br>
+            <label for="prof">Profissão</label>
+            <input type="text" name="prof" id="prof" list="lista">
+            <datalist id="lista">
+                <option value="prof">Professor</option>
+                <option value="adm">Administrador</option>
+                <option value="dev">Desenvolvedor</option>
+                <option value="cpt">Carpinteiro</option>
+            </datalist>
+        </form>
+    </fieldset>
 </body>
 </html>
