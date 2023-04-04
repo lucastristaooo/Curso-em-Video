@@ -8,25 +8,40 @@
 </head>
 <body>
     <h1>Formulário</h1>
-    <fieldset>
-        <legend>Várias escolhas possíveis</legend>
-        <form action="" method="get" autocomplete="on">
-            <input type="checkbox" name="a" id="a"> <label for="a">A</label><br>
-            <input type="checkbox" name="b" id="b"> <label for="b">B</label><br>
-            <input type="checkbox" name="c" id="c"> <label for="c">C</label><br>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Apagar">
-        </form>
-    </fieldset>
-    <fieldset>
-        <legend>Apenas uma escolha possível</legend>
-        <form action="" method="get" autocomplete="on">
-            <input type="radio" name="radio" id="radio1" checked> <label for="radio1">A</label><br>
-            <input type="radio" name="radio" id="radio2"> <label for="radio2">B</label><br>
-            <input type="radio" name="radio" id="radio3"> <label for="radio3">C</label><br>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Apagar">
-        </form>
-    </fieldset>
+    <p>
+        <label for="n1">Escolha um número: </label>
+        <select name="" id="n1" oninput="calcular()">
+            <optgroup label="NÚMEROS 1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </optgroup>
+        </select>
+    </p>
+    <p>
+        <label for="n2">Escolha outro número: </label>
+        <select name="" id="n2" oninput="calcular()">
+            <optgroup label="NÚMEROS 2">
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+            </optgroup>
+        </select>
+    </p>
+    <p>
+        <output id="resposta">
+        </output>
+    </p>
 </body>
+    <script>
+        function calcular(){
+            var n1 = document.getElementById("n1")
+            var n2 = document.getElementById("n2")
+            document.getElementById("resposta").innerHTML = `A soma dos valores é ${Number(n1.value) + Number(n2.value)}`
+        }
+    </script>
 </html>
