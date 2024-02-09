@@ -1,10 +1,2 @@
-print('Sorteie um aluno')
-import random
-a = input('Digite um nome')
-b = input('Digite um nome')
-c = input('Digite um nome')
-d = input('Digite um último nome')
-lista = [a,b,c,d]
-random.shuffle(lista)
-r = lista
-print(f'O aluno escolhido foi {r}')
+x = float(input("Digite um número: "))
+print(f"A porção inteira do número é {x:.0f}")   

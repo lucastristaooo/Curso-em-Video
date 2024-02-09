@@ -1,11 +1,10 @@
-valores = [[], []]
-for v in range(1, 8):
-    valor = int(input(f'Digite o {v}° valor: '))
-    if valor % 2 == 0:
-        valores[0].append(valor)
-    else:
-        valores[1].append(valor)
-valores[0].sort()
-valores[1].sort()
-print(f'Os valores pares digitados foram: {(valores[0])}')
-print(f'Os valores ímpares digitados foram: {(valores[1])}')
+lista = []
+par = []
+for c in range(0, 5):
+    lista.append(int(input("Digite um número: ")))
+for i in lista:
+    if i % 2 == 0:
+        par.append(i)
+print(f"O número 9 aparece {lista.count(9)}")
+print(f"O número 3 aparece na posição {lista.index(3)+1}")
+print(f"Os números pares são: {par}")

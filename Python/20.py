@@ -1,8 +1,6 @@
-print('Ache a posição da letra')
-x = str(input('Digite uma frase:')).strip().upper()
-x1 = str(x.count('A'))
-print(f'A letra A aparece {x1} vezes na frase')
-x2 = x.find('A')
-print(f'A letra A aparece pela primeira vez na posição {x2}')
-x3 = x.rfind('A')
-print(f'A letra A aparece pela última vez na posição {x3}')
+from random import shuffle
+lista = []
+for c in range(0, 4):
+    lista.append(str(input("Digite um nome: ")))
+shuffle(lista)
+print((lista))  

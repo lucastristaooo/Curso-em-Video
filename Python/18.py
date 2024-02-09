@@ -1,10 +1,3 @@
-print('Edite seu nome')
-nome = str(input('Digite seu nome:  ')).strip()
-frase1 = nome.upper()
-print(f'Seu nome em maiúsculas é {frase1}')
-frase2 = nome.lower()
-print(f'Seu nome em minúsculas é {frase2}')
-frase3 = len(nome) - nome.count(' ')
-print(f'Seu nome ao total tem {frase3} letras')
-frase4 = nome.find (' ')
-print(f'Seu primeiro nome tem {frase4} letras')
+import math
+x = float(input("Digite o valor do ângulo: "))
+print(f'O seno, cosseno e tangente do ângulo {x} são respectivamente: {math.sin(math.radians(x)):.2f}, {math.cos(math.radians(x)):.2f}, {math.tan(math.radians(x)):.2f}.')

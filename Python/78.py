@@ -1,11 +1,5 @@
-from random import randint
-lista  = []
-print("JOGUE NA MEGA SENA")
-x = int(input("Digite quantos jogos deseja fazer: "))
-for c in range(x):
-    while len(lista) < 6:
-        p = randint(1, 60)
-        if p not in lista:
-            lista.append(p)
-    print(f"Lista {c+1}: {(sorted(lista))}")
-    lista.clear()
+lista = []
+for c in range(0, 5):
+    lista.append(int(input("Digite um número: ")))
+print(f"O maior valor foi {max(lista)} na posição {lista.index(max(lista))}")
+print(f"O menor valor foi {min(lista)} na posição {lista.index(min(lista))}")

@@ -1,10 +1,8 @@
-print("Veja sua média")
-x = float(input('Digite sua nota'))
-y = float(input('Digite sua segunda nota'))
-n = (x + y) / 2
-if n < 5:
-    print(f'REPROVADO: Sua média foi {n}, menor que 5.0')
-elif 7 >= n >= 5:
-    print(f'RECUPERAÇÃO: Sua média foi {n}, entre 5.0 e 6.9')
-elif n >= 7:
-    print(f'APROVADO: Sua média foi {n}, entre 7.0 e 10.0')
+n1 = int(input("Digite um número: "))
+n2 = int(input("Digite outro número: "))
+if n1 > n2 and n1 != n2:
+    print("O primeiro valor é maior")
+elif n2 > n1 and n2 != n1:
+    print("O segundo valor é maior")
+else:
+    print("Os dois valores são iguais")

@@ -1,5 +1,2 @@
-print('Arredonde seu número para baixo')
-import math
-x = float(input('Digite um número'))
-x = math.floor(x)
-print(f'Seu número arredondado para baixo é {x}')
+x = float(input("Digite a temperatura em celcius: "))
+print(f"A temperatura em fahrenheit é igual a {9*x/5+32}")

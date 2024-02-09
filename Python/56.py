@@ -1,30 +1,33 @@
-print("Calculadora completa")
-x = int(input('Digite um número:'))
-y = int(input('Digite outro número:'))
-n = 0
-while n != 5:
-    print('''Escolha:
-    [1] Soma
-    [2] Multiplicação
-    [3] Maior número
-    [4] Novos valores
-    [5] Sair do programa''')
-    n = int(input('Qual vai ser?'))
-    if n == 1:
-        print(f'A soma é {x + y}')
-    elif n == 2:
-        print(f'A multiplicação é {x * y}')
-    elif n == 3:
-        if x > y:
-            print(f'O maior é {x}')
-        elif y > x:
-            print(f'O maior é {y}')
-    elif n == 4:
-        print('Informe os números novamente:')
-        x = int(input('Digite um novo número:'))
-        y = int(input('Digite outro novo número:'))
-    elif n == 5:
-        print('Fechando programa...')
+print("Vejamos a idade de algumas pessoas")
+print("""
+[ 0 ] Homem
+[ 1 ] Mulher""")
+media_idade = 0
+homem_idade = 0
+homem_nome = " "
+mulher_nome = " "
+mulher_idade = 0
+mult1 = 0
+mult2 = 0
+for c in range(0, 4):
+    gen = int(input("Qual a Opção?"))
+    nome = str(input("Digite o nome: "))
+    idade = int(input("Digite a idade: "))
+    media_idade += idade / 4
+    if gen == 0:
+        if idade > homem_idade:
+            homem_idade = idade
+            homem_nome = nome
+            mult1 += 1
+    elif gen == 1:
+        if idade < 20:
+            mulher_nome += nome + ", "
+            mulher_idade += str(idade) + ", "
+            mult2 += 1
     else:
-        print('Valor inválido.')
-print('Fim do programa')
+        print("Erro, por favor tente novamente e selecione uma das oções validas")
+print("A media da idade do grupo é igual a {media_idade} anos")
+if mult1 >= 1:
+    print(f"O homem mais velho é {homem_nome} com {homem_idade} anos")
+if mult2 >= 2:
+    print(f"O número de mulheres menores de 20 anos é {mult2}, são elas {mulher_nome} com respectivamente {mulher_idade} anos")

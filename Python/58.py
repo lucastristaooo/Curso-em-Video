@@ -1,5 +1,7 @@
-from math import factorial
-print("Veja o fatorial de um número")
-x = int(input('Digite um número:'))
-y = factorial(x)
-print(f'O resultado é {y}')
+from random import randint
+num = randint(0, 10)
+cont = 0
+while x != num:
+    x = int(input("Errado! Tente novamente: "))
+    cont += 1
+print(f"Parabéns! O número era {num} e você levou {cont} tentativas para acertar")

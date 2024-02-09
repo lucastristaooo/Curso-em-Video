@@ -1,14 +1,12 @@
-print('Analisador de triângulos')
-x = float(input('Digite um valor:'))
-y = float(input('Digite outro valor'))
-z = float(input('Digite outro valor'))
-if x < y + z or y < x + z and z < y + x:
-    print('É possível um triângulo ser formado')
-    if x == y == z:
-        print('É um triângulo Equilátero')
-    elif x != y != z != x:
-        print('É um triângulo Escaleno')
-    else:
-        print('É um triângulo Isóceles')
+from datetime import date
+x = int(input("Digite o ano de nascimento do atleta: "))
+if (date.today().year-x) <= 9:
+    print(f"O atleta tem {date.today().year-x} anos e se classifica como MIRIM")
+elif (date.today().year-x) > 9 and (date.today().year-x) <= 14:
+    print(f"O atleta tem {date.today().year-x} anos e se classifica como INFANTIL")
+elif (date.today().year-x) > 14 and (date.today().year-x) <= 19:
+    print(f"O atleta tem {date.today().year-x} anos e se classifica como JUNIOR")
+elif (date.today().year-x) > 19 and (date.today().year-x) <= 25:
+    print(f"O atleta tem {date.today().year-x} anos e se classifica como SÊNIOR")
 else:
-    print('Um triângulo não pode ser formado')
+    print(f"O atleta tem {date.today().year-x} anos e se classifica como MASTER")

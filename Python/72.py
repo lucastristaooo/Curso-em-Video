@@ -1,7 +1,5 @@
-valores = list()
-for c in range(0, 5):
-    valores.append(int(input(f"Digite um valor para a posição {c}: ")))
-print("=-"*30)
-print(f"Você digitou os valores: {valores}")
-print(f"O menor valor digitado foi o {min(valores)} na posição {valores.index(min(valores))}.")
-print(f"O maior valor digitado foi o {max(valores)} na posição {valores.index(max(valores))}.")
+extensos = ("zero", "um", "dois", "três","quatro", "cinco", "seis", "sete", "oito","nove","dez", "onze", "doze", "treze", "quatorze","quinze", "dezesseis", "dezessete", "dezoito", "dezenove", "vinte")
+numero = int(input("Digite um numero de 0 a 20: "))
+while numero not in range(0,21):
+	numero = int(input("Tente novamente. Digite um número de 0 a 20: "))
+print(f"Você digitou o número {extensos[numero]}!")

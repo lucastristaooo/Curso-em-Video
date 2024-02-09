@@ -1,17 +1,10 @@
-print("Veja o maior e o menor peso informados")
-n = 0
-maior = 0
-menor = 0
-for c in range(1,6):
-    x = float(input(f'Digite o {c}º peso em kg'))
-    n +=1
-    if c == 1:
-        maior = x
-        menor = x
-    else:
-        if x > maior:
-            maior = x
-        if x < menor:
-            menor = x
-print(f'De {n} pesos informados, {maior}kg é o maior peso')
-print(f'De {n} pesos informados, {menor}kg é o menor peso')
+num = int(input("Digite um número: "))
+contador = 0
+for i in range(1, num + 1):
+    if num % i == 0:
+        contador += 1
+print("O número {} foi divisível {} vezes!".format(num, contador))
+if contador == 2:
+    print("O número é primo")
+else:
+    print("O número não é primo")

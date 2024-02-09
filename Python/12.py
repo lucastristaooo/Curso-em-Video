@@ -1,4 +1,2 @@
-print("Veja quantos dólares você consegue comprar")
-n = float(input('Quantos R$ você tem?'))
-x = n / 4.77
-print(f'Com R${n} você consegue comprar {x:.3}US$')
+x = float(input("Digite o preço do produto: "))
+print(f"O produto com 5% de desconto custará {x-(x*0.05):.2f}")

@@ -1,12 +1,15 @@
-dict = {}
-dict['nome'] = str(input("Digite seu nome: "))
-dict['idade'] = int(input("Digite sua idade: "))
-dict['carteira'] = str(input("Digite sua carteira de trabalho: "))
-if len(dict['carteira']) > 3:
-    dict['ano'] = int(input("Digite o ano de contratação: "))
-    dict['salário'] = float(input("Digite seu salário: "))
-    dict['aposentadoria'] = (dict['ano'] + dict['idade'] + 35) - 2022
+lista = []
+while True:
+    num = int(input("Digite um número: "))
+    if num not in lista:
+        lista.append(num)
+    x = str(input("Deseja continuar?"))
+    if x not in "Ss":
+        break
+print(f"Você digitou {len(lista)} elementos")
+lista.sort(reverse=True)
+print(f"Os valores emm ordem decrescente são: {lista}")
+if 5 not in lista:
+    print("O número 5 não se encontra na lista")
 else:
-    print("Você não tem carteira de trabalho.")
-for c, k in dict.items():
-    print(f"{k} é o {c}")
+    print(f"O número 5 está na lista, na posição {lista.index(5)}")

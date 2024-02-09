@@ -1,4 +1,6 @@
-print("Converta C em F")
-c = int(input('Digite uma temperatura em C'))
-f = (c * 1.8) + 32
-print(f'Sua temperatura é {f} em F')
+x = str(input("Digite seu nome: "))
+separa = x.split()
+print(f"Seu nome em maiúsculas é {x.upper()}")
+print(f"Seu nome em minúsculas é {x.lower()}")
+print(f"Seu nome ao todo tem {len(x) - x.count(' ')} letras")
+print(f"Seu primeiro nome é {separa[0]} com {len(separa[0])} letras")

@@ -1,12 +1,11 @@
-from datetime import date
-print('CONFIRA SEU ALISTAMENTO MILITAR')
-x = int(input('Em que ano você nasceu?'))
-idade = date.today().year - x
-if idade == 18:
-    print('Está na hora de você se alistar! Você já completou 18 anos.')
-elif idade > 18:
-    z = idade - 18
-    print(f'Você já passou da idade de alistamento ou já se alistou a {z} ano(s).')
+import math
+x = float(input("Digite um número: "))
+opt = int(input("Digite [1] para Binário [2] para Octal [3] para Hexadecimal: "))
+if opt == 1:
+    print(f"O número {x} convertido é {bin(x)}")
+elif opt == 2:
+    print(f"O número {x} convertido é {oct(x)}")
+elif opt == 3:
+    print(f"O número {x} convertido é {hex(x)}")
 else:
-    y = idade - 18
-    print(f'Ainda faltam {y} ano(s) para você se alistar no exército!')
+    print("Valor inválido")

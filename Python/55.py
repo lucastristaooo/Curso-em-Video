@@ -1,5 +1,5 @@
-print("Digite seu sexo")
-p = str(input('Digite um sexo (M/F): ')).upper()
-while p not in ('MmFF'):
-    p = str(input('Digite um sexo (M/F): ')).upper()
-print(f'Sucesso! o sexo foi {p}')
+lista = []
+for c in range(0, 4):
+    lista.append(input(f"Digite o peso da pessoa número {c}: "))
+print(f"Maior peso: {max(lista)}")
+print(f"Mneor peso: {min(lista)}")

@@ -1,15 +1,12 @@
-print("Veja o desconto em cada forma de pagamento")
-preço = float(input('Digite o valor do produto'))
-meio = int(input(f'Digite a forma de pagamento: [1] - Dinheiro ou Cheque, [2] - Cartão, [3] - Cartão em duas vezes, [4] - Cartão em 3 ou mais vezes: '))
-dinheiro = preço - (preço * 10) / 100
-cartão = preço - (preço * 5) / 100
-x2cartão = preço == preço
-x3cartão = preço + (preço * 20) / 100
-if meio == 1:
-    print(f'Seu valor é {dinheiro}R$ com 10% de desconto')
-elif meio == 2:
-    print(f'Seu valor é {cartão}R$ com 5% de desconto')
-elif meio == 3:
-    print(f'Seu valor é {x2cartão}R$, sem desconto algum')
+s1 = float(input('Primeiro segmento: '))
+s2 = float(input('Segundo segmento: '))
+s3 = float(input('Terceiro segmento: '))
+if s1 < s2 + s3 and s2 < s1+s3 and s3 < s1+s2:
+    if s1 == s2 and s2 == s3:
+        print('Os segmentos acima PODEM FORMAR um triângulo EQUILÁTERO!')
+    elif s1 == s2 or s1 == s3 or s2 == s3:
+        print('Os segmentos acima PODEM FORMAR um triângulo ISÓSCELES!')
+    else:
+        print('Os segmentos acima PODEM FORMAR um triângulo ESCALENO!')
 else:
-    print(f'Seu valor é {x3cartão}R$, com 20% de juros')
+    print('Os segmentos acima NÃO PODEM FORMAR um triângulo!')

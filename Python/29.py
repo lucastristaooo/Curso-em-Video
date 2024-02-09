@@ -1,4 +1,5 @@
-print("Veja se seu nome tem 'Silva' nele")
-nome = str(input('Digite seu nome completo')).strip().upper()
-x = ('SILVA' in nome)
-print(f'Seu nome tem Silva? {x}')
+x = int(input("Digite a velocidade atual: "))
+if x <= 80:
+    print("Tudo ok, dirija com segurança!")
+else:
+    print(f"Você foi multado! O limite máximo é 80km, e você está a {x}km. Sua multa é de R${(x-80)*7}")

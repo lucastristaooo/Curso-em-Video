@@ -1,9 +1,8 @@
-print('Compare que veja qual valor é maior')
-x = int(input('Digite um número'))
-y = int(input('Digite outro número'))
-if x > y:
-    print(f'O primeiro valor {x} é maior que {y}')
-elif y > x:
-    print(f'O segundo valor {y} é maior que {x}')
+vc = float(input("Digite o valor da casa: "))
+sal = float(input("Digite o seu salário: "))
+prestação = int(input("Digite em quantos anos deseja pagar a casa: "))
+tempo = vc / (prestação * 12)
+if tempo > (sal*0.3):
+    print("Empréstimo negado")
 else:
-    print(f'{x} e {y} são valores iguais')
+    print("Empréstimo aceito")

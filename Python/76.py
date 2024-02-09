@@ -1,17 +1,4 @@
-pessoas = []
-while True:
-    nome = input('Nome: ')
-    peso = float(input('Peso: '))
-    pessoas.append([nome, peso])
-    if input('Quer continuar? [S/N] ') not in 'sS': break
-print(30 * '-=')
-
-print(f'Ao todo, você cadastrou {len(pessoas)} pessoas.')
-
-maior_peso = max([p for n, p in pessoas])
-print(f'O maior peso foi de {maior_peso:.1f}Kg. ', end='')
-print(f'Peso de {[n for n, p in pessoas if p == maior_peso]}')
-
-menor_peso = min([p for n, p in pessoas])
-print(f'O menor peso foi de {menor_peso:.1f}Kg. ', end='')
-print(f'Peso de {[n for n, p in pessoas if p == menor_peso]}')
+listagem = ("Lápis", "1.75", "Borracha", "2.00", "Caderno", "15.90", "Estojo", "25.00", "Transferidor", "4.20",
+            "Compasso", "9.99", "Mochila", "120.32", "Caneta", "22.30", "Livro", "34.90")
+for i in range(0, len(listagem), 2):
+    print(f"{listagem[i]:.<76}", "R$", f"{listagem[i+1]:>10}")

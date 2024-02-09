@@ -1,5 +1,2 @@
-print('Calcule o antecessor e o sucessor')
-n = int(input('Digite um número'))
-a = n-1
-s = n+1
-print(f'Se o número escolhido é {n} seu antecessor é {a} e seu sucessor é {s}')
+x = float(input("Digite uma medida em metros: "))
+print(f"A medida em cm é igual a {x*100} e em mm é igual a {x*1000}")

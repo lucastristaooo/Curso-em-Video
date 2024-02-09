@@ -1,31 +1,13 @@
-print('Jogue Pedra, Papel ou Tesoura')
-n1 = str(input('''Escolha:
-[1] Pedra
-[2] Papel
-[3] Tesoura''')).strip().upper()
-import random
-lista = ['PEDRA', 'PAPEL', 'TESOURA']
-n2 = (random.choice(lista))
-if (n1 not in lista):
-    print('ERRO, VALOR NÃO ACEITO, JOGUE NOVAMENTE') 
-if n1 == 'PEDRA' and n2 == 'TESOURA':
-    print('JA KEN PO')
-    print(f'Você venceu! o computador escolheu {n2}')
-elif n1 == 'PEDRA' and n2 == 'PAPEL':
-    print('JA KEN PO')
-    print(f'Você perdeu! o computador escolheu {n2}')
-elif n1 == 'PAPEL' and n2 == 'PEDRA':
-    print('JA KEN PO')
-    print(f'Você venceu! o computador escolheu {n2}')
-elif n1 == 'PAPEL' and n2 == 'TESOURA':
-    print('JA KEN PO')
-    print(f'Você perdeu! o computador escolheu {n2}')
-elif n1 == 'TESOURA' and n2 == 'PEDRA':
-    print('JA KEN PO')
-    print(f'Você perdeu! o computador escolheu {n2}')
-elif n1 == 'TESOURA' and n2 == 'PAPEL':
-    print('JA KEN PO')
-    print(f'Você venceu! o computador escolheu {n2}')
-elif n1 == n2:
-    print('JA KEN PO')
-    print('EMPATE! JOGUE NOVAMENTE')
+peso = float(input("Digite seu peso: "))
+altura = float(input("Digite sua altura: "))
+imc = peso/(altura ** 2)
+if imc < 18.5:
+    print(f"Seu IMC é de {imc}, e você está abaixo do peso")
+elif imc >= 18.5 and imc < 25:
+    print(f"Seu IMC é de {imc}, e você está no peso ideal")
+elif imc >= 25 and imc < 30:
+    print(f"Seu IMC é de {imc}, e você está sobrepeso")
+elif imc >= 30 and imc < 40:
+    print(f"Seu IMC é de {imc}, e você está obeso")
+else:
+    print(f"Seu IMC é de {imc}, e você está com obesidade mórbida")

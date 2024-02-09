@@ -1,7 +1,7 @@
-print("Veja se o número é ímpar ou par")
-x = int(input('Digite um número'))
-x1 = x % 2
-if x1 == 1:
-    print(f'Seu número {x} é ímpar')
+from random import randint
+n = randint(0, 5)
+x = int(input("Digite um número de 0-5: "))
+if x == n:
+    print(f"Você venceu! Pensou no mesmo número que eu, o {n}")
 else:
-    print(f'Seu número {x} é par')
+    print(f"Você perdeu! Eu pensei no número {n} e você no {x}")

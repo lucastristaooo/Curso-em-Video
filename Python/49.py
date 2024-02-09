@@ -1,7 +1,3 @@
-print("Vjeja os 10 primeiros termos de uma razão")
-pi = int(input('Digite o primeiro termo: '))
-r = int(input('Digite a razão: '))
-x = pi + (10 - 1) * r
-print('Os 10 primeiros termos dessa razão são: ')
-for c in range(pi, x + r, r):
-    print(f'{c}')
+x = int(input("Digite um número para ver sua tabuada: "))
+for c in range(1, 11):
+    print(f"{x} X {c} = {x*c}")

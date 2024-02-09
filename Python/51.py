@@ -1,14 +1,5 @@
-from datetime import date
-print("Veja quem são as pessoas maiores de idade")
-atual = date.today().year
-a = 0
-b = 0
-for c in range (1,8):
-    x = int(input('Digite o ano de nascimento:'))
-    y = atual - x
-    if y >= 18:
-        a+=1
-    else:
-        b+=1
-print(f'{a} pessoas são maiores de idade')
-print(f'{b} pessoas sao menores de idade')
+x = int(input("Digite o primeiro termo: "))
+razao = int(input("Digite a razão"))
+for c in range(x, (razao*10)+x, razao):
+    print(x, end=" ")
+    x+=razao

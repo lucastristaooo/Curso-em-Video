@@ -1,16 +1,17 @@
-dict = {}
-gols = []
-dict['nome'] = str(input("Digite o nome do jogador: "))
-dict['partidas'] = int(input(f"Quantas partidas {dict['nome']} jogou?"))
-dict['gols'] = gols
-for c in range(dict['partidas']):
-    gols.append(int(input(f"Quantos gols {dict['nome']} marcou na partida {c+1}?")))
-dict['total'] = sum(gols)
-print(dict)
-print()
-for k, v in dict.items():
-    print(f"{k} tem o valor {v}")
-print()
-print(f"O jogador {dict['nome']} jogou {dict['partidas']} partidas")
-for i, v in enumerate(dict['gols']):
-    print(f"Na partida {i+1} ele fez {v} gols")
+lista = []
+pares = []
+ímpares = []
+while True:
+    num = int(input("Digite um número: "))
+    lista.append(num)
+    x = str(input("Deseja continuar?"))
+    if x not in "Ss":
+        break
+for c in lista:
+    if c % 2 == 0:
+        pares.append(c)
+    else:
+        ímpares.append(c)
+print(f"Lista com todos os números: {lista}")
+print(f"Lista com números pares: {pares}")
+print(f"Lista com números ímapres {ímpares}")

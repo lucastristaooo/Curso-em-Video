@@ -1,15 +1,10 @@
 from random import randint
-def sorteio(lista):
-    for c in range(0, 5):
-        lista.append(randint(0, 10))
-        lista
-    print(f"Os valores sorteados foram: {lista}")
-def soma(lista):
-    soma = 0
-    for c in lista:
-        if c % 2 == 0:
-            soma += c
-    print(f"A soma dos valores pares dentro de {lista} é de {soma}")
 lista = []
-sorteio(lista)
-soma(lista)
+y = int(input("Quantos jogos você deseja sortear?"))
+for c in range(0, y):
+    for i in range(0, 6):
+        x = randint(0, 60)
+        if x not in lista:
+            lista.append(x)
+    print(f"Jogo {c+1}: {lista}")
+    lista.clear()
